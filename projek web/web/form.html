@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+    <script src="jquery-1.10.0.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+    <h1 style="text-align: center; font-family: 'Courier New', Courier, monospace;"> WELCOME TO BLOOM.IZ </h1>
+
+    <ul class="menu_ul">
+        <ul class="menu_ul li">
+            <ul class="menu_ul a">
+                <ul class="menu_ul a:hover">
+
+
+                    <li menu="menu_ul"><a href="home.html" target="location">Home</a></li>
+                    <li menu="menu_ul"><a href="list.html" target="location">List of Product</a></li>
+                    <li menu="menu_ul"><a href="form.html" target="location">Order Form</a></li>
+                    <li menu="menu_ul"><a href="Gellery.html" target="location">Gallery</a></li>
+                    <li menu="menu_ul"><a href="contact.html" target="location">Contact Us</a></li>
+                </ul>
+            </ul>
+        </ul>
+    </ul>
+
+    <div data-role="header">
+        <h1>ORDER FORM</h1>
+    </div><!-- /header -->
+    <div data-role="main" class="ui-content">
+        <form method="post" name="order">
+            <div class="ui-field-contain">
+                <label for="fullname"><b>Full name:</b></label>
+                <input type="text" name="fullname" id="fullname" placeholder="Your full name...." required>
+                <br><br><br>
+
+                <label for="notel"><b>Phone Number:</b></label>
+                <input type="text" name="notel" id="notel" placeholder="+60**-*******" required>
+                <br><br><br>
+
+                <label for="address"><b>Address</b></label>
+                <textarea name="message" rows="10" id="txta" cols="30" placeholder="your addrerss......"
+                    required></textarea>
+                <br><br><br>
+
+                <label for="email"><b>Email</b></label>
+                <input type="email" name="email" id="email" placeholder="*****@gmail.com" required><br><br><br>
+
+                <label for="order"><b>Choose your order from the list:</b></label>
+                <input list="orders" name="order" id="order" placeholder="(order list)" required>
+                <datalist id="orders">
+                    <option value="WARDAH BEGINNER SET">
+                    <option value="SOME BY MI (TRAVEL SET)">
+                    <option value="HANDCREAM ( Body Shop )">
+                    <option value="Hand Sanitiser ( Body Shop )">
+                    <option value="Bath Bomb ( Body Shop )">
+                    <option value="Aroma Therapy Candle ( Body Shop )">
+                </datalist><br><br><br>
+
+                <label for="quantity"><b>Quantity:</b></label>
+                <input type="number" id="quantity" name="quantity" required><br><br><br>
+                <center><button onclick="myFunction()">submit</button>
+                </center>
+
+            </div>
+        </form>
+        <script>
+            function myFunction() {
+                alert("Your order in process!");
+            }
+        </script>
+</body>
+
+</html>
